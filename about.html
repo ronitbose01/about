@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About - TechWithRonit</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link href="css/main.css" rel="stylesheet">
+</head>
+
+<body>
+
+    <div class="container">
+
+        <div class="card">
+            <img src="lib/images/about/profile-ac.png" alt="profile">
+            <h3>Ronit Bose</h3>
+            <span class="post">Youtuber / Developer</span>
+            <div class="icons">
+                <a href="#" class="fab fa-youtube"></a>
+                <a href="#" class="fab fa-instagram"></a>
+                <a href="#" class="fab fa-twitter"></a>
+                <a href="#" class="fab fa-facebook-f"></a>
+            </div>
+            <a href="#"><button>follow</button></a>
+            <a href="#"><button>Message</button></a>
+            <div class="shares">
+                <a href="#" class="counter"> <i class="fas fa-heart"></i> <span class="count">1000</span></a>
+                <a href="#" class="counter"> <i class="fas fa-share"></i> <span class="count">1500</span></a>
+                <a href="#" class="counter"> <i class="fas fa-comment"></i> <span class="count">850</span></a>
+            </div>
+        </div>
+
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+    <script>
+        $(Document).ready(function () {
+
+            $('.count').each(function () {
+
+                $(this).prop('Counter', 0).animate({
+                    Counter: $(this).text()
+                }, {
+                    duration: 3500,
+                    easing: 'swing',
+                    step: function (now) {
+                        $(this).text(Math.ceil(now) + '+');
+                    }
+
+                })
+
+            });
+        });
+
+
+    </script>
+
+</body>
+
+</html>

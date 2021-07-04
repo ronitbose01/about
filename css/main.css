@@ -1,0 +1,90 @@
+*{
+    margin:0; padding:0%;
+    box-sizing: border-box;
+    text-decoration: none;
+    transition: .2s linear;
+    font-family: Arial, Helvetica, sans-serif;
+    letter-spacing:1px;
+    text-transform: capitalize;
+}
+
+.container{
+    min-height:100vh;
+    width:100vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: url(../lib/images/about/back-bg.png) no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.card{
+    height:470px;
+    width:350px;
+    text-align: center;
+    border-radius: 10px;
+    background: rgba(255,255,255,.1);
+    backdrop-filter: blur(10px);
+    box-shadow: 0 5px 10px rgba(0,0,0,.3);
+}
+.card img{
+    height:120px;
+    width:120px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-top: 60px;
+    box-shadow: 0 0 0 10px rgba(255,255,255,.2),
+                0 15px 100px rgba(0,0,0,.3);
+}
+.card h3{
+    margin-top: 15px;
+    padding: 5px 0;
+    font-size: 25px;
+    color: #fff;
+}
+.card .post{
+    color: #eee;
+}
+.card .icons{
+    margin:25px 0;
+}
+.card .icons a{
+    margin:0 5px;
+    font-size: 20px;
+    color: #eee;
+}
+.card .icons a:hover{
+    transform: scale(1.4);
+}
+.card button{
+    border-radius: 50px;
+    border: 2px solid #fff;
+    background: none;
+    outline: none;
+    margin: 0 2px;
+    cursor: pointer;
+    height: 40px;
+    width: 140px;
+    font-size: 15px;
+}
+.card button:hover{
+    background: #fff;
+    color: #333;
+}
+.card .shares{
+    margin-top: 40px;
+}
+.card .shares .counter{
+    font-size: 20px;
+    margin: 0 5px;
+    color: #fff;
+}
+.card .shares .counter:nth-child(2){
+    padding: 5px 15px;
+    border: 1px solid #eee;
+    border-top: none;
+    border-bottom: none;
+}
+.card .shares .counter .count{
+    color: #f0f0f0;
+}
